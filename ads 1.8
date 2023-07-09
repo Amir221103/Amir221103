@@ -1,0 +1,20 @@
+public class DigitChecker {
+    public static boolean isAllDigits(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            if (!Character.isDigit(s.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "123456";
+        boolean isDigits1 = isAllDigits(s1);
+        System.out.println( s1 +  isDigits1);
+
+        String s2 = "123a12";
+        boolean isDigits2 = isAllDigits(s2);
+        System.out.println(s2 +  isDigits2);
+    }
+}
