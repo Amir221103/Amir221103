@@ -1,0 +1,21 @@
+public class Fibonacci {
+    public static int fibonacci(int n) {
+        if (n == 0) {
+            return 0; // Base case: F0 = 0
+        } else if (n == 1) {
+            return 1; // Base case: F1 = 1
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n1 = 5;
+        int fib1 = fibonacci(n1);
+        System.out.println("The " + n1 + "-th element in the Fibonacci sequence is: " + fib1);
+
+        int n2 = 17;
+        int fib2 = fibonacci(n2);
+        System.out.println("The " + n2 + "-th element in the Fibonacci sequence is: " + fib2);
+    }
+}
