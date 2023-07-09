@@ -1,0 +1,20 @@
+public class MinimumElement {
+    public static int findMinimum(int[] numbers) {
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] >= min) {
+                continue;
+            }
+            min = numbers[i];
+        }
+
+        return min;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 10, 1, 32, 3, 45};
+        int minimum = findMinimum(numbers);
+        System.out.println(minimum);
+    }
+}
